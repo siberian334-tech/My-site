@@ -536,7 +536,36 @@
     transition: opacity var(--transition), transform var(--transition);
   }
   .cta-card .btn-wa:hover { opacity: 0.9; transform: translateY(-2px); }
- 
+ .social-links{
+    display:flex;
+    flex-direction:column;
+    gap:10px;
+    margin-top:10px;
+}
+
+.social{
+    padding:12px;
+    border-radius:10px;
+    text-decoration:none;
+    color:white;
+    background:rgba(255,255,255,0.08);
+    transition:0.3s;
+}
+
+.social:hover{
+    transform:scale(1.02);
+    background:rgba(56,189,248,0.2);
+}
+
+/* Instagram gradient */
+.social.instagram:hover{
+    background:linear-gradient(45deg,#f9ce34,#ee2a7b,#6228d7);
+}
+
+/* Facebook blue */
+.social.facebook:hover{
+    background:#1877f2;
+}
   /* ─── FOOTER ─────────────────────────────────────────── */
   footer {
     background: var(--ink);
